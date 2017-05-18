@@ -1,0 +1,10 @@
+[Unit]
+Description=Download pics from this blog
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=watch -n 600 /usr/bin/sh /home/pi/run.sh
+
+[Install]
+WantedBy=multi-user.target
